@@ -1,0 +1,23 @@
+.attendance-container {
+width: 350px;
+height: 300px;
+border: 1px solid black;
+}
+
+.input-with-button {
+    display: flex;
+    align-items: center;
+}
+
+.input-with-button input {
+    flex: 1;
+    padding: 5px;
+}
+
+.input-with-button button {
+    margin-left: 10px;
+}
+#sandbox-img{
+    width: 24px;
+    height: 24px;
+}
