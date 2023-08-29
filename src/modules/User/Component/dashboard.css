@@ -1,14 +1,41 @@
-.right-services{
-    position: absolute;
-    right: 10%;
-    top: 0;
+.right-services {
+  position: absolute;
+  left: 10%;
+  top: 0;
 }
-#main-dashboard{
-    border-bottom: 1px solid grey;
+#main-dashboard {
+  border-bottom: 1px solid grey;
+  width: 100%;
 }
 
-    .right-leave{
-     position: absolute;
-     right: 0;
-     margin-top: 10px;
-    }
+.right-leave {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+.body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 60px 1fr;
+}
+
+.header {
+  background-color: #fff;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.sidemenu {
+  background-image: linear-gradient(#101141, #3b6178);
+  grid-column: 1/1;
+  grid-row: 1/3;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  background-color: rgb(47, 210, 210);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 10px;
+}
