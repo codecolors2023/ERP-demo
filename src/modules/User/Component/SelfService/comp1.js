@@ -3,7 +3,7 @@ import './Comp.css'
 import profile from '../assets/man(1)2.png'
 function Comp1() {
   return (
-    <div class="container">
+    <div class="container1">
     <div class="card">
       <div class="row no-gutters">
         <div class="col-md-4">

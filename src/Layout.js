@@ -7,6 +7,7 @@ import Services from "./modules/User/Component/Services/Services";
 import Sidebar from "./modules/User/Sidebar";
 import Profile from "./modules/User/Component/SelfService/Profile";
 import Demo from "./modules/User/Demo";
+import Team from "./modules/User/Component/SelfService/team";
 
 export default function Layout() {
   return (
@@ -19,9 +20,12 @@ export default function Layout() {
           <Route path="/home" element={<Home />} />
           <Route path="/user" element={<User />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/demo" element={<Demo/>} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/team" element={<Team/>}/>
         </Routes>
       </Router>
+
+      
     </>
   );
 }

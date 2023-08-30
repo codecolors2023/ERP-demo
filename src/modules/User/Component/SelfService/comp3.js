@@ -3,7 +3,7 @@ import label from '../assets/integrity1.png'
 function Comp3() {
   return (
    
-    <div class="container">
+    <div class="container1">
       <div class="card d-flex align-items-start">
         <div class="row no-gutters ">
           <div class="col-md-6">

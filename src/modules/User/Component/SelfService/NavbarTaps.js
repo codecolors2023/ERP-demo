@@ -1,5 +1,6 @@
 import React from "react";
 import "../SelfService/Navbar.css";
+import { Link } from "react-router-dom";
 
 function NavbarTaps() {
   return (
@@ -7,11 +8,14 @@ function NavbarTaps() {
       <ul class="nav-links">
         <li>
           <a href="" class="active">
-            Profile
+          <Link>Profile</Link>
           </a>
+          
         </li>
         <li>
-          <a href="">Team</a>
+          <a href="">
+          <Link to="team">Team</Link>
+          </a>
         </li>
         <li>
           <a href="">Task</a>
