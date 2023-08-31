@@ -42,10 +42,14 @@ function Sidebar() {
       <div class="d-flex" id="wrapper">
         <div class="bg-dark" id="sidebar-wrapper">
           <div class="list-group list-group-flush ">
+            <div className="logo">
+              <div className="text-align">
+             <img src={lock} alt="lock" id="lock" />
+             </div>
+             <hr style={{color:"white"}}/>
+           </div>
+          
             <ul class="text-align">
-              <li class="list">
-                <img src={lock} alt="lock" id="lock" />
-              </li>
               <div class="hoverback">
                 <li class="list">
                   <img src={service} alt="service" />
@@ -89,7 +93,7 @@ function Sidebar() {
                 <span class="label">Files</span>
               </div>
               <div class="hoverback">
-                <li class="list">
+                <li onClick={()=>navigate("/assets")} class="list">
                   <img src={asset} alt="asset" />
                 </li>
                 <span class="label">Assets</span>
