@@ -11,17 +11,18 @@ import Assets from "./modules/User/Component/Asset/asserts";
 import { Row, Container, Col } from "react-bootstrap";
 import Sidebar from "./modules/User/Sidebar";
 import Navbar from "./modules/User/Component/SelfService/Navbar";
+import "./modules/User/Component/dashboard.css";
 export default function Layout() {
   return (
     <>
       <Router>
-        <Container fluid>
+        {/* <Container fluid>
           <Row>
-            <Col lg={2} >
+            <Col lg={1} >
               <Sidebar />
             </Col>
 
-            <Col lg={10}>
+            <Col lg={11}>
               <Row>
                   <Navbar/>
               </Row>
@@ -39,7 +40,29 @@ export default function Layout() {
               </Row>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
+
+        <div className="body">
+          <header className="header">
+            <Navbar />
+          </header>
+          <section class="sidemenu">
+            <Sidebar />
+          </section>
+
+          <main class="main">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/user" element={<User />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/demo" element={<Demo />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/assets" element={<Assets />} />
+            </Routes>
+          </main>
+        </div>
       </Router>
     </>
   );

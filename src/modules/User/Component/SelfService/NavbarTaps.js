@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NavbarTaps() {
   return (
     <div className="tap">
-      <ul class="nav-links">
+      <ul class="nav-links" >
         <li>
           <a href="" class="active">
           <Link>Profile</Link>

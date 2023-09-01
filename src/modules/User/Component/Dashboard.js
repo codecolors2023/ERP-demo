@@ -9,18 +9,17 @@ export default function Dashboard() {
   return (
     <>
       <div className="body">
-        <header className="header">
+        {/* <header className="header">
           <Navbar />
-        </header>
-        <section class="sidemenu">
+        </header> */}
+        {/* <section class="sidemenu">
           <Sidebar />
-        </section>
+        </section> */}
 
         <main class="main">
-          <Outlet />
-          <NavbarTaps />
+          {/* <NavbarTaps /> */}
           <div className="outlet">
-            <Profile />
+            {/* <Profile /> */}
           </div>
         </main>
       </div>

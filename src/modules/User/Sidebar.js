@@ -39,8 +39,8 @@ function Sidebar() {
 
                 </ul> */}
 
-      <div class="d-flex" id="wrapper">
-        <div class="bg-dark" id="sidebar-wrapper">
+      <div class="d-flex h-100" id="wrapper">
+        <div id="sidebar-wrapper">
           <div class="list-group list-group-flush ">
             <div className="logo">
               <div className="text-align">
