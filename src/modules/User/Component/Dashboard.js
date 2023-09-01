@@ -19,7 +19,9 @@ export default function Dashboard() {
         <main class="main">
           <Outlet />
           <NavbarTaps />
-          <div className="outlet"><Profile /></div>
+          <div className="outlet">
+            <Profile />
+          </div>
         </main>
       </div>
     </>
